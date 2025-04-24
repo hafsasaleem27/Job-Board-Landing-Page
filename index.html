@@ -1,223 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Job Board Landing Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link href="styles.css" rel="stylesheet"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Board Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">JobFinder</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Companies</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="btn btn-primary ms-2" href="#">Post a Job</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="py-5 text-center bg-light">
-    <div class="container">
-      <h1 class="display-5 fw-bold">Find Your Dream Job</h1>
-      <p class="lead">Browse thousands of job listings from top companies around the world.</p>
-      <form class="row g-2 justify-content-center mt-4">
-        <div class="col-md-4">
-          <input type="text" class="form-control" placeholder="Job title or keyword">
-        </div>
-        <div class="col-md-3">
-          <input type="text" class="form-control" placeholder="Location">
-        </div>
-        <div class="col-md-2">
-          <button class="btn btn-primary w-100">Search</button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- Featured Jobs -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center">Featured Jobs</h2>
-      <div class="row g-4">
-
-        <!-- Job Card -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Frontend Developer</h5>
-              <p class="card-text text-muted">at TechCorp • San Francisco, CA</p>
-              <span class="badge bg-success mb-2">Full-Time</span>
-              <p class="card-text"><small>$70k - $90k / year</small></p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Apply Now</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">JobFinder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Companies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-2" href="#">Post a Job</a></li>
+                </ul>
             </div>
-          </div>
         </div>
+    </nav>
 
-        <!-- Repeat similar cards -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">UI/UX Designer</h5>
-              <p class="card-text text-muted">at Designify • Remote</p>
-              <span class="badge bg-warning mb-2">Contract</span>
-              <p class="card-text"><small>$50/hr</small></p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Apply Now</a>
-            </div>
-          </div>
+    <!-- Hero Section -->
+    <section class="py-5 text-center bg-light">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Find Your Dream Job</h1>
+            <p class="lead">Browse thousands of job listings from top companies around the world.</p>
+            <form class="row g-2 justify-content-center mt-4">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Job title or keyword">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Location">
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary w-100">Search</button>
+                </div>
+            </form>
         </div>
+    </section>
 
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Backend Engineer</h5>
-              <p class="card-text text-muted">at CloudNet • New York, NY</p>
-              <span class="badge bg-info text-dark mb-2">Part-Time</span>
-              <p class="card-text"><small>$60k - $80k / year</small></p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Apply Now</a>
-            </div>
-          </div>
-        </div>
+    <!-- Featured Jobs -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">Featured Jobs</h2>
+            <div class="row g-4">
 
-      </div>
-    </div>
-  </section>
+                <!-- Job Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Frontend Developer</h5>
+                            <p class="card-text text-muted">at TechCorp • San Francisco, CA</p>
+                            <span class="badge bg-success mb-2">Full-Time</span>
+                            <p class="card-text"><small>$70k - $90k / year</small></p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
 
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Browse by Category</h2>
-      <div class="row g-4">
-  
-        <!-- Category Card -->
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="text-center p-4 border rounded shadow-sm bg-white h-100 category-card">
-            <div class="mb-3">
-              <i class="bi bi-palette fs-1 text-primary"></i>
-            </div>
-            <h5 class="mb-0">Design</h5>
-          </div>
-        </div>
-  
-        <!-- Development -->
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="text-center p-4 border rounded shadow-sm bg-white h-100 category-card">
-            <div class="mb-3">
-              <i class="bi bi-code-slash fs-1 text-success"></i>
-            </div>
-            <h5 class="mb-0">Development</h5>
-          </div>
-        </div>
-  
-        <!-- Marketing -->
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="text-center p-4 border rounded shadow-sm bg-white h-100 category-card">
-            <div class="mb-3">
-              <i class="bi bi-megaphone fs-1 text-warning"></i>
-            </div>
-            <h5 class="mb-0">Marketing</h5>
-          </div>
-        </div>
-  
-        <!-- Data Science -->
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="text-center p-4 border rounded shadow-sm bg-white h-100 category-card">
-            <div class="mb-3">
-              <i class="bi bi-bar-chart-line fs-1 text-danger"></i>
-            </div>
-            <h5 class="mb-0">Data Science</h5>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-  
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Trusted by Top Companies</h2>
-      <div class="row justify-content-center align-items-center g-4">
-  
-        <!-- Logo -->
-        <div class="col-4 col-md-2 text-center">
-          <img src="https://img.freepik.com/premium-vector/google-icon_1273375-870.jpg?w=826" class="img-fluid grayscale-logo" alt="Google" height="60px">
-        </div>
-  
-        <div class="col-4 col-md-2 text-center">
-          <img src="https://img.freepik.com/premium-photo/3d-render-amazon-logo-extruded-amber-glass-floating-upright-15-degree-angle-neon-yellow-ou_1020495-783497.jpg?w=826" class="img-fluid grayscale-logo" alt="Amazon" height="60px">
-        </div>
-  
-        <div class="col-4 col-md-2 text-center">
-          <img src="https://images.unsplash.com/photo-1706879350865-e1cdb3792b22?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid grayscale-logo" alt="Spotify" height="60px">
-        </div>
-  
-        <div class="col-4 col-md-2 text-center">
-          <img src="https://img.freepik.com/premium-photo/3d-render-airbnb-logo-transparent-acrylic-gently-rotating-diagonal-view-neon-pink-outlines_1020495-783916.jpg?w=826" class="img-fluid grayscale-logo" alt="Airbnb" height="60px">
-        </div>
-  
-        <div class="col-4 col-md-2 text-center">
-          <img src="https://img.freepik.com/premium-photo/red-alphabet-n-with-inner-shadow-isolated-white-with-shadow-3d-illustration_669435-1083.jpg?w=900" class="img-fluid grayscale-logo" alt="Netflix" height="60px">
-        </div>
-  
-      </div>
-    </div>
-  </section>
-  
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Explore Jobs by Industry</h2>
-      <div class="row g-4">
-  
-        <div class="col-6 col-md-3">
-          <div class="text-center p-4 bg-white shadow-sm border rounded category-card">
-            <i class="bi bi-hospital fs-1 text-primary mb-3"></i>
-            <h6>Healthcare</h6>
-          </div>
-        </div>
-  
-        <div class="col-6 col-md-3">
-          <div class="text-center p-4 bg-white shadow-sm border rounded category-card">
-            <i class="bi bi-cpu fs-1 text-success mb-3"></i>
-            <h6>Technology</h6>
-          </div>
-        </div>
-  
-        <div class="col-6 col-md-3">
-          <div class="text-center p-4 bg-white shadow-sm border rounded category-card">
-            <i class="bi bi-briefcase fs-1 text-warning mb-3"></i>
-            <h6>Business</h6>
-          </div>
-        </div>
-  
-        <div class="col-6 col-md-3">
-          <div class="text-center p-4 bg-white shadow-sm border rounded category-card">
-            <i class="bi bi-globe2 fs-1 text-danger mb-3"></i>
-            <h6>Remote Work</h6>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-  
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4 mt-5">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2025 JobFinder. All rights reserved.</p>
-    </div>
-  </footer>
+                <!-- Repeat similar cards -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX Designer</h5>
+                            <p class="card-text text-muted">at Designify • Remote</p>
+                            <span class="badge bg-warning mb-2">Contract</span>
+                            <p class="card-text"><small>$50/hr</small></p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Backend Engineer</h5>
+                            <p class="card-text text-muted">at CloudNet • New York, NY</p>
+                            <span class="badge bg-info text-dark mb-2">Part-Time</span>
+                            <p class="card-text"><small>$60k - $80k / year</small></p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Browse by Category</h2>
+            <div class="row g-4">
+
+                <!-- Category Card -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="text-center p-4 border rounded shadow-sm bg-white h-100 category-card">
+                        <div class="mb-3">
+                            <i class="bi bi-palette fs-1 text-primary"></i>
+                        </div>
+                        <h5 class="mb-0">Design</h5>
+                    </div>
+                </div>
+
+                <!-- Development -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="text-center p-4 border rounded shadow-sm bg-white h-100 category-card">
+                        <div class="mb-3">
+                            <i class="bi bi-code-slash fs-1 text-success"></i>
+                        </div>
+                        <h5 class="mb-0">Development</h5>
+                    </div>
+                </div>
+
+                <!-- Marketing -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="text-center p-4 border rounded shadow-sm bg-white h-100 category-card">
+                        <div class="mb-3">
+                            <i class="bi bi-megaphone fs-1 text-warning"></i>
+                        </div>
+                        <h5 class="mb-0">Marketing</h5>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="text-center p-4 border rounded shadow-sm bg-white h-100 category-card">
+                        <div class="mb-3">
+                            <i class="bi bi-bar-chart-line fs-1 text-danger"></i>
+                        </div>
+                        <h5 class="mb-0">Data Science</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Trusted by Top Companies</h2>
+            <div class="row justify-content-center align-items-center g-4">
+
+                <!-- Logo -->
+                <div class="col-4 col-md-2 text-center">
+                    <img src="https://img.freepik.com/premium-vector/google-icon_1273375-870.jpg?w=826"
+                        class="img-fluid grayscale-logo" alt="Google" height="60px">
+                </div>
+
+                <div class="col-4 col-md-2 text-center">
+                    <img src="https://img.freepik.com/premium-photo/3d-render-amazon-logo-extruded-amber-glass-floating-upright-15-degree-angle-neon-yellow-ou_1020495-783497.jpg?w=826"
+                        class="img-fluid grayscale-logo" alt="Amazon" height="60px">
+                </div>
+
+                <div class="col-4 col-md-2 text-center">
+                    <img src="https://images.unsplash.com/photo-1706879350865-e1cdb3792b22?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="img-fluid grayscale-logo" alt="Spotify" height="60px">
+                </div>
+
+                <div class="col-4 col-md-2 text-center">
+                    <img src="https://img.freepik.com/premium-photo/3d-render-airbnb-logo-transparent-acrylic-gently-rotating-diagonal-view-neon-pink-outlines_1020495-783916.jpg?w=826"
+                        class="img-fluid grayscale-logo" alt="Airbnb" height="60px">
+                </div>
+
+                <div class="col-4 col-md-2 text-center">
+                    <img src="https://img.freepik.com/premium-photo/red-alphabet-n-with-inner-shadow-isolated-white-with-shadow-3d-illustration_669435-1083.jpg?w=900"
+                        class="img-fluid grayscale-logo" alt="Netflix" height="60px">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Explore Jobs by Industry</h2>
+            <div class="row g-4">
+
+                <div class="col-6 col-md-3">
+                    <div class="text-center p-4 bg-white shadow-sm border rounded category-card">
+                        <i class="bi bi-hospital fs-1 text-primary mb-3"></i>
+                        <h6>Healthcare</h6>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="text-center p-4 bg-white shadow-sm border rounded category-card">
+                        <i class="bi bi-cpu fs-1 text-success mb-3"></i>
+                        <h6>Technology</h6>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="text-center p-4 bg-white shadow-sm border rounded category-card">
+                        <i class="bi bi-briefcase fs-1 text-warning mb-3"></i>
+                        <h6>Business</h6>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="text-center p-4 bg-white shadow-sm border rounded category-card">
+                        <i class="bi bi-globe2 fs-1 text-danger mb-3"></i>
+                        <h6>Remote Work</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Job Seekers Say</h2>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="card text-center mx-auto" style="max-width: 600px;">
+                            <div class="card-body">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-3"
+                                    width="80" height="80" alt="User 1">
+                                <h5 class="card-title">Emily Johnson</h5>
+                                <p class="lead">Product Designer at Figma</p class="lead">
+                                <p class="card-text">“JobFinder helped me land my current role within two weeks. The
+                                    interface is super intuitive, and I
+                                    loved how easy it was to apply.”</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="card text-center mx-auto" style="max-width: 600px;">
+                            <div class="card-body">
+                                <img src="https://randomuser.me/api/portraits/men/36.jpg" class="rounded-circle mb-3"
+                                    width="80" height="80" alt="User 2">
+                                <h5 class="card-title">James Wilson</h5>
+                                <p class="lead">Full-Stack Developer, Freelance</p class="lead">
+                                <p class="card-text">“The variety of remote opportunities on this platform is
+                                    incredible. I check it daily for new gigs
+                                    — it’s a lifesaver for freelancers.”</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="card text-center mx-auto" style="max-width: 600px;">
+                            <div class="card-body">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" class="rounded-circle mb-3"
+                                    width="80" height="80" alt="User 3">
+                                <h5 class="card-title">Sophie Lee</h5>
+                                <p class="lead">Marketing Specialist at Shopify</p class="lead">
+                                <p class="card-text">“I used to get lost on other job sites. Here, everything is clean,
+                                    relevant, and fast. I’ve recommended it to all my
+                                    friends!”</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4-->
+                    <div class="carousel-item">
+                        <div class="card text-center mx-auto" style="max-width: 600px;">
+
+                            <div class="card-body">
+                                <img src="https://randomuser.me/api/portraits/men/37.jpg" class="rounded-circle mb-3"
+                                width="80" height="80" alt="User 4"/>
+                                <h5 class="card-title">Arjun Patel</h5>
+                                <p class="lead">Data Analyst at Microsoft</p class="lead">
+                                <p class="card-text">“Found my dream job through this site. The filtering by role and industry really helped me narrow 
+                                    things down quickly.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 JobFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
